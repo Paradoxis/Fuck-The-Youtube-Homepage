@@ -2,13 +2,13 @@
 
     chrome.webRequest.onBeforeRequest.addListener(details => {
         return {
-            redirectUrl: "https://www.youtube.com/feed/subscriptions"
+            "redirectUrl": "https://www.youtube.com/feed/subscriptions"
         };
     }, {
         "urls": [
             "https://www.youtube.com/"
         ],
-        types: [
+        "types": [
             "main_frame"
         ]
     }, [
